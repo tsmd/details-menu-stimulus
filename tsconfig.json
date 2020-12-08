@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "dist",
+    "removeComments": true,
+    "strict": true,
+    "target": "ESNext"
+  },
+  "files": ["src/index.ts"]
+}
