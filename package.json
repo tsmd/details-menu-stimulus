@@ -7,36 +7,28 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "details-menu.js",
+  "module": "details-menu.js",
   "type": "module",
-  "types": "dist/index.d.ts",
   "repository": "tsmd/details-menu-stimulus",
   "scripts": {
-    "clean": "rm -rf dist",
-    "lint": "eslint . --ext .js,.ts && tsc --noEmit",
-    "prebuild": "npm run clean && npm run lint && mkdir dist",
-    "build": "tsc",
-    "pretest": "npm run build",
-    "test": "karma start test/karma.config.cjs",
-    "prepublishOnly": "npm run build"
+    "test": "karma start karma.config.cjs"
+  },
+  "peerDependencies": {
+    "stimulus": ">=2.0.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^7.15.0",
     "karma": "^5.2.3",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^3.1.0",
     "karma-mocha": "^2.0.1",
     "karma-mocha-reporter": "^2.2.5",
     "mocha": "^8.2.1",
-    "typescript": "^4.1.2"
+    "stimulus": "^2.0.0"
   },
   "keywords": [
     "details",
     "menu"
-  ],
-  "eslintIgnore": [
-    "dist/"
   ]
 }
